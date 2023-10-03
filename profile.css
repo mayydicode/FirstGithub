@@ -1,0 +1,140 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 80vh;
+  background: linear-gradient(to right, #355c7d, #c06c84);
+  font-family: "Poppins";
+}
+.card {
+  margin: 200px auto;
+  width: 320px;
+  height: 430px;
+  background-color: #1a2a6c;
+  border-radius: 15px;
+  padding: 20px;
+  position: relative;
+}
+
+.header {
+  margin-bottom: 10px;
+  display: flex;
+  margin-bottom: 20px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.bx-heart,
+.cart {
+  font-size: 27px;
+  color: white;
+  display: flex;
+  transition: 0.3s;
+}
+.card_img {
+  width: 90%;
+  height: 45%;
+  margin: 10px;
+  transition: 1s;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.card_title,
+.card_price {
+  font-size: 25px;
+  font-weight: bold;
+  text-align: center;
+  color: white;
+}
+
+.card_price {
+  transition: 0.5s;
+  font-size: 23px;
+}
+.card_title {
+  transition: 0.5s;
+  color: #ff5e62;
+}
+.card-size {
+  transition: 0.5s;
+  display: flex;
+  padding: 4px;
+  margin: 3px;
+  color: white;
+  align-items: center;
+}
+.card-size span {
+  padding: 2px 5px;
+  background: #dadada;
+  border-radius: 5px;
+  margin: 0 4px;
+  color: black;
+}
+
+.card-size,
+.card-action {
+  display: flex;
+  align-items: center;
+}
+
+.card-action {
+  transition: 0.5s;
+  margin-bottom: 15px;
+  margin-top: 10px;
+  justify-content: space-between;
+}
+
+button {
+  padding: 10px 20px;
+  border-radius: 10px;
+  background: #ff5e62;
+  color: white;
+  border: none;
+  font-weight: bold;
+  font-size: 15px;
+  transition: 0.5s;
+}
+
+.card:hover .card_img {
+  transform: translateY(-10px) rotate(-40deg) scale(1.2);
+  transition: 0.5s;
+}
+
+/* .card-action button:hover { */
+/* transform: scale(-1.2); */
+/* } */
+
+.card:hover .card_title {
+  transform: translateY(-30px);
+}
+.card:hover .card_price {
+  transform: translateY(-30px);
+}
+.card:hover .card-size {
+  transform: translateY(-30px);
+}
+.card:hover .card-action {
+  transform: translateY(-30px);
+}
+
+.card_title,
+.card_price,
+.card-size,
+.card-action {
+  transition: 0.5s;
+  transition-delay: 0.3s;
+}
+
+.heart:hover {
+  transform: scale(1.15);
+}
+.cart:hover {
+  transform: scale(1.15 );
+}
