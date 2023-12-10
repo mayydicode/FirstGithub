@@ -59,6 +59,7 @@ img {
   font-size: 23px;
 }
 .card_title {
+  margin-bottom: 10px;
   transition: 0.5s;
   color: #ff5e62;
 }
@@ -91,7 +92,7 @@ img {
   justify-content: space-between;
 }
 
-button {
+.card-action button {
   padding: 10px 20px;
   border-radius: 10px;
   background: #ff5e62;
@@ -111,30 +112,23 @@ button {
 /* transform: scale(-1.2); */
 /* } */
 
-.card:hover .card_title {
-  transform: translateY(-30px);
-}
-.card:hover .card_price {
-  transform: translateY(-30px);
-}
-.card:hover .card-size {
-  transform: translateY(-30px);
-}
-.card:hover .card-action {
+/* .card:hover .card_title {
   transform: translateY(-30px);
 }
 
-.card_title,
-.card_price,
-.card-size,
-.card-action {
+
+/* .infomation {
   transition: 0.5s;
   transition-delay: 0.3s;
-}
+} */
 
 .heart:hover {
   transform: scale(1.15);
 }
 .cart:hover {
-  transform: scale(1.15 );
+  transform: scale(1.15);
+}
+
+.card-action button:hover {
+  background: #b92b27;
 }
